@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AirplayForAndroidTVFromScratch</string>
+    <string name="waiting_connection">Please connect your iPhone/iPad to TV using Airplay</string>
+    <string name="connection_success">Connection is successful!</string>
+    <string name="connection_fail">Connection is failed, please try again</string>
+    <string name="loading_video">The video is loading, please wait patiently</string>
+    <string name="device_name_prefix">Your Android TV name:</string>
 </resources>
