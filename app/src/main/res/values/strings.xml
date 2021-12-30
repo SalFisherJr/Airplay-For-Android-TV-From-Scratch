@@ -6,4 +6,6 @@
     <string name="loading_video">The video is loading, please wait patiently</string>
     <string name="device_name_prefix">Your Android TV name:</string>
     <string name="wifi_info_prefix">Wifi:</string>
+    <string name="track_selection_button">Select tracks</string>
+    <string name="text_offset_selection_button">Sync captions</string>
 </resources>
