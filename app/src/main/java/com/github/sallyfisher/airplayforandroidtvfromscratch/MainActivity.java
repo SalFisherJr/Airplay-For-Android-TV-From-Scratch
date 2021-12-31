@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import com.github.sallyfisher.airplayforandroidtvfromscratch.helper.DeviceHelper;
+import com.github.sallyfisher.airplayforandroidtvfromscratch.service.NetworkingService;
 import com.github.sallyfisher.airplayforandroidtvfromscratch.utils.NetworkUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayDeviceInfo();
+        startNetworkingService();
         playVideo(VIDEO_URL);
     }
 
@@ -41,5 +44,11 @@ public class MainActivity extends AppCompatActivity {
         k.putExtra(VIDEO_URL_KEY, videoUrl);
         startActivity(k);
     }
+
+    private void startNetworkingService() {
+        Intent intent = new Intent(this, NetworkingService.class);
+        this.startService(intent);
+    }
+
 }
 
